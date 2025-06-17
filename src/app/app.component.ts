@@ -1,5 +1,5 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
-import { Platform, AlertController, IonRouterOutlet, MenuController } from '@ionic/angular';
+import { Platform, AlertController, IonRouterOutlet, MenuController, ModalController } from '@ionic/angular';
 import { SplashScreen } from '@capacitor/splash-screen';
 import { StatusBar, Style } from '@capacitor/status-bar';
 import { Location } from '@angular/common';

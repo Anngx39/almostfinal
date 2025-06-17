@@ -1,32 +1,20 @@
 <ion-tabs>
-  <ion-header>
-
-  </ion-header>
-  
-<ion-content>
-    <ion-searchbar slot="top" show-clear-button="always" placeholder="Tìm kiếm..."></ion-searchbar> 
-</ion-content>
-
 
   <ion-tab-bar slot="bottom">
-
-    <ion-tab-button tab="tab1">
-      <ion-icon aria-hidden="true" name="earth-outline"></ion-icon>
-      <ion-label> {{tab1}}</ion-label>
+    <ion-tab-button tab="explore" href="/tabs/explore">
+      <ion-icon aria-hidden="true" name="earth"></ion-icon>
+      <ion-label>Explore</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="tab2">
-      <ion-icon aria-hidden="true" name="map-outline"></ion-icon>
-      <ion-label> {{tab2}} </ion-label>
+    <ion-tab-button tab="tab2" href="/tabs/tab2">
+      <ion-icon aria-hidden="true" name="map"></ion-icon>
+      <ion-label>My Maps</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="tab3">
-      <ion-icon aria-hidden="true" name="albums-outline"></ion-icon>
-      <ion-label> {{tab3}} </ion-label>
+    <ion-tab-button tab="template" href="/tabs/template">
+      <ion-icon aria-hidden="true" name="folder"></ion-icon>
+      <ion-label>Template</ion-label>
     </ion-tab-button>
-    
   </ion-tab-bar>
 
 </ion-tabs>
-
-

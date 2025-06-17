@@ -4,33 +4,28 @@ import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'tabs',
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadChildren: () => import('../tab_Explore/tab1.module').then(m => m.Tab1PageModule)
+        path: 'explore',
+        loadChildren: () => import('../Explore/explore.module').then(m => m.ExplorePageModule)
       },
       {
         path: 'tab2',
-        loadChildren: () => import('../tab_MyMap/tab2.module').then(m => m.Tab2PageModule)
+        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
       },
       {
-        path: 'tab3',
-        loadChildren: () => import('../tab_Template/tab3.module').then(m => m.Tab3PageModule)
+        path: 'template',
+        loadChildren: () => import('../Template/template.module').then(m => m.TemplatePageModule)
       },
-      {
-        path: '',
-        redirectTo: 'tab1', // ĂN theo chỗ này
-        pathMatch: 'full'
-      }
     ]
   },
   {
     path: '',
-    redirectTo: 'tab1',
+    redirectTo: '/tabs/explore',
     pathMatch: 'full'
-  }
+  },
 ];
 
 @NgModule({
